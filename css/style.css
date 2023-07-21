@@ -1,0 +1,152 @@
+/*************************************************/
+/* General usage styles*/
+/*************************************************/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header-container {
+  position: relative;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.4rem;
+}
+.header-container::after {
+  content: "";
+  position: absolute;
+  left: 2.4rem;
+  bottom: -0.1rem;
+  height: 0.1rem;
+  width: calc(100% - 4.8rem);
+  background-color: #a2a2a2;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.logo img {
+  height: 4.2rem;
+}
+.list {
+  display: flex;
+  list-style: none;
+}
+.search {
+  position: relative;
+  width: 4rem;
+  height: 3.8rem;
+  border-left: 1px solid #fff;
+}
+.search-icon {
+  height: 2rem;
+  width: 2rem;
+  stroke: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.list li a:link,
+.list li a:visited {
+  padding: 3.6rem 1.2rem;
+  /* We make padding here not in the container in order to make border touch the line*/
+  display: block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s;
+  z-index: 99;
+}
+.list li a:hover,
+.list li a:active,
+.active {
+  color: #19c8f8 !important;
+  border-bottom: 1px solid currentColor !important;
+}
+/* Mobile navigation style*/
+.icon-mobile-nav {
+  color: #fff;
+  width: 3.6rem;
+  height: 3.6rem;
+  display: none;
+}
+@media (max-width: 50em) {
+  .icon-mobile-nav {
+    padding: 3.6rem 0;
+    transition: all 0.3s;
+    display: block;
+  }
+  .icon-mobile-nav:hover {
+    color: #19c8f8;
+    cursor: pointer;
+  }
+  .search {
+    display: none;
+  }
+  .list {
+    display: none;
+  }
+  .icon-mobile-nav:hover + .list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .icon-mobile-nav:hover + .list a {
+    padding: 1.6rem 0.8rem;
+  }
+}
+/*
+--- Text system ---
+-font size:
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- font weight:
+  default : 400 500 600 700
+
+- line height:
+  default : 1 1.05 1.7
+
+
+--- Color system ---
+
+- main  : #19c8f8
+- Tints : 
+- Shades : 
+- Grays : 
+- accent : 
+
+
+
+--- shadow ---
+
+--- border raduis ---
+
+--- whitespace ---
+-spacing:
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
