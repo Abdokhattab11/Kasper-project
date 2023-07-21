@@ -188,7 +188,8 @@ nav {
   transform: translateY(-50%);
   cursor: pointer;
 }
-points {
+
+.bollet-points {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -199,14 +200,23 @@ points {
   list-style: none;
 }
 .bollet-point {
-  width: 2rem;
-  height: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
   border: 1px solid #fff;
   border-radius: 50%;
   cursor: pointer;
 }
 .bollet-points .active {
   background-color: #19c8f8;
+}
+@media (max-width: 50em) {
+  .hero-text {
+    padding: 4.8rem 2.4rem;
+  }
+  .hero-text,
+  .text-container {
+    width: 100%;
+  }
 }
 /*
 --- Text system ---
