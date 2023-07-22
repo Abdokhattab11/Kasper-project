@@ -141,8 +141,8 @@ nav {
 .list li a:hover,
 .list li a:active,
 .active {
-  color: #19c8f8 !important;
-  border-bottom: 1px solid currentColor !important;
+  color: #19c8f8;
+  border-bottom: 1px solid currentColor;
 }
 /* Mobile navigation style*/
 .icon-mobile-nav {
@@ -199,7 +199,7 @@ nav {
   left: 0;
   transform: translateY(-50%);
   padding: 4.8rem 2.4rem;
-  background-color: rgba(39, 145, 174, 0.7);
+  background-color: rgba(24, 109, 132, 0.7);
   color: #fff;
   display: flex;
   justify-content: flex-end;
@@ -319,7 +319,7 @@ nav {
   overflow: hidden;
 }
 .design-text-container {
-  background-color: rgba(39, 145, 174, 0.7);
+  background-color: rgba(24, 109, 132, 0.7);
   position: absolute;
   width: 50%;
   padding: 4.8rem 2.4rem;
@@ -444,9 +444,13 @@ nav {
   padding: 1.2rem 1.2rem;
   text-transform: uppercase;
 }
+/*************************************************/
+/* video */
+/*************************************************/
 .video,
 .section-vedio {
   position: relative;
+  overflow: hidden;
 }
 
 .video::after {
@@ -461,7 +465,7 @@ nav {
 .video-text {
   position: absolute;
   width: 100%;
-  background-color: rgba(39, 145, 174, 0.7);
+  background-color: rgba(24, 109, 132, 0.7);
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
@@ -489,36 +493,201 @@ nav {
 .video-text button:hover {
   background-color: #eee;
 }
-/*
---- Text system ---
--font size:
-  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
---- whitespace ---
--spacing:
-  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-
-- font weight:
-  default : 400 500 600 700
-
-- line height:
-  default : 1 1.05 1.7
-
-
---- Color system ---
-
-- main  : #19c8f8
-- Tints : rgba(39, 145, 174, 0.7)
-- Shades : 
-- Grays : #fff #a2a2a2 #555 #333 #777
-- accent : 
-
-
-
---- shadow ---
-
---- border raduis ---
-
-
-*/
+/*************************************************/
+/* About us */
+/*************************************************/
+.about-heading {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+.about-img-container {
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about-info-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../images/stats.png");
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+}
+.about-info-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(24, 109, 132, 0.7);
+  width: 120rem;
+  height: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-icon {
+  color: #fff;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 1.2rem;
+  background-color: #000000;
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+}
+.about-num {
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2.4rem;
+}
+.about-text {
+  font-size: 1.6rem;
+  color: #fff;
+}
+/*************************************************/
+/* testomonials */
+/*************************************************/
+.testomonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 4.8rem;
+  column-gap: 9.8rem;
+  row-gap: 6.8rem;
+  padding-bottom: 9.8rem;
+}
+.testomonials-heading,
+.skills-heading {
+  text-align: center;
+}
+.testomonials-heading h3,
+.skills-heading h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+  color: #333;
+}
+.testomonials-heading p,
+.skills-heading p {
+  color: #777;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+.tstnl-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+.tstnl-item {
+  display: flex;
+  gap: 4.8rem;
+}
+.tstnl-img {
+  height: 9.6rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.tstnl-text {
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid #a2a2a2;
+}
+.tstnl-p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #333;
+}
+.tstnl-name {
+  align-self: flex-end;
+  font-size: 1.2rem;
+  color: #777;
+}
+.tstnl-container .bollet-points {
+  position: relative;
+  align-self: flex-start;
+}
+.tstnl-container .bollet-points .bollet-point {
+  width: 1.4rem;
+  height: 1.4rem;
+  border: none;
+  border: 1px solid #999;
+}
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.skill-item p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+.skill-perc {
+  width: 100%;
+  background-color: #cecece;
+  height: 3rem;
+}
+.skill-perc span {
+  height: 100%;
+  display: block;
+  position: relative;
+  background-color: #19c8f8;
+}
+.skill-perc span::after {
+  content: attr(prog);
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  top: -0rem;
+  transform: translate(50%, -150%);
+  background-color: #000000;
+  color: #fff;
+  padding: 0.4rem 0.4rem;
+}
+.skill-perc span::before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 0.8rem;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -80%);
+  border-color: black transparent transparent transparent;
+}
+/*************************************************/
+/* testomonials */
+/*************************************************/
+.section-quote {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/quote.jpg");
+  background-size: cover;
+  background-position: start;
+}
+.section-quote .container {
+  text-align: center;
+}
+.quote-text {
+  font-size: 3.2rem;
+  color: #fff;
+  margin-bottom: 2.4rem;
+}
+.quote-text::before {
+  content: open-quote;
+}
+.quote-text::after {
+  content: close-quote;
+}
+.quote-name {
+  font-size: 1.6rem;
+  color: #fff;
+}
