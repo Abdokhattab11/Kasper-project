@@ -26,7 +26,7 @@ body {
 /* SECTION HEADER */
 .head-text {
   text-align: center;
-  width: 40%;
+  width: 48rem;
 }
 .flex-to-center-head-section {
   width: 100%;
@@ -34,7 +34,7 @@ body {
   justify-content: center;
 }
 .section-head {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -272,7 +272,7 @@ nav {
 }
 
 /*************************************************/
-/* Hero */
+/* Services */
 /*************************************************/
 .section-serivces {
   background-color: #fff;
@@ -304,9 +304,143 @@ nav {
 }
 .services-icon {
   display: block;
-  color: #555;
+  color: #333;
   width: 6rem;
   height: 6rem;
+}
+
+/* Our design */
+.section-our-design {
+  position: relative;
+  height: 65vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../images/design-features.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+.design-text-container {
+  background-color: rgba(39, 145, 174, 0.7);
+  position: absolute;
+  width: 50%;
+  padding: 4.8rem 2.4rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  /* To make text start from left*/
+  display: flex;
+  justify-content: flex-start;
+}
+.our-disign-text {
+  width: 50%;
+  color: #fff;
+}
+.our-disign-text h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+}
+.our-disign-text ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.design-item {
+  display: flex;
+  gap: 2.4rem;
+}
+.design-item p {
+  font-size: 1.6rem;
+}
+.design-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.design-figure {
+  position: absolute;
+  height: 100%;
+  bottom: -40%;
+  left: 10%;
+}
+.design-img {
+  height: 80%;
+}
+/*************************************************/
+/* protfolio */
+/*************************************************/
+.gallary-menu {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+  margin-bottom: 4.8rem;
+}
+.gallary-menu li a:link,
+.gallary-menu li a:visited {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+}
+.gallary-menu li .active-gallary:link,
+.gallary-menu li .active-gallary:visited {
+  background-color: #19c8f8;
+  color: #fff;
+}
+.gallary-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-bottom: 4.8rem;
+}
+.img-gallary-container {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  width: 100%;
+}
+.gallary-img-text {
+  position: absolute;
+  bottom: 0;
+  padding: 1.6rem;
+  transform: translateY(100%);
+  transition: all 0.5s;
+  z-index: 99;
+  height: 30%;
+  width: 100%;
+  background-color: #fff;
+}
+.head-img {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+.info-img {
+  font-size: 1.6rem;
+  color: #19c8f8;
+}
+.img-gallary-container:hover .gallary-img-text {
+  transform: translateY(0);
+}
+.gallary-img {
+  transition: all 0.5s;
+  width: 100%;
+}
+.img-gallary-container:hover .gallary-img {
+  transform: scale(1.2) rotate(3deg);
+}
+.more {
+  margin-bottom: 9.8rem;
+}
+.btn-more {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: #19c8f8;
+  padding: 1.2rem 1.2rem;
 }
 /*
 --- Text system ---
