@@ -792,3 +792,202 @@ nav {
 .contact-pricing a:active {
   background-color: #179ec4;
 }
+/*************************************************/
+/* Pricing */
+/*************************************************/
+.secion-subscribe {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url(../images/subscribe.jpg);
+}
+.subscribe-container {
+  display: flex;
+  align-items: center;
+  gap: 9.8rem;
+}
+.subscribe-container form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.subscribe-container form input[type="email"] {
+  color: #fff;
+  caret-color: #19c8f8;
+  padding: 2rem 2rem 2rem 6rem;
+  border: 1px solid #fff;
+  border-right: none;
+  background-color: transparent;
+  width: 40rem;
+}
+.subscribe-container form input[type="email"]::placeholder {
+  color: #eee;
+}
+.subscribe-container form input[type="submit"] {
+  background-color: #19c8f8;
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 2rem;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-left: none;
+}
+.subscribe-container form input[type="submit"]:hover {
+  background-color: #179ec4;
+}
+.subscribe-container form input[type="submit"]:focus,
+.subscribe-container form input[type="email"]:focus {
+  outline: none;
+}
+.subscribe-container form ion-icon {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+.subscribe-container p {
+  font-size: 1.6rem;
+  color: #fff;
+}
+/*************************************************/
+/* Contact US  */
+/*************************************************/
+.contact-grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 2.4rem;
+  margin-bottom: 4.8rem;
+}
+.contact-grid-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.form-name,
+.form-email,
+.form-massage {
+  width: 100%;
+  /* top | right | bottom | left */
+  padding: 2rem 2rem 2rem 4rem;
+  border: none;
+  border: 1px solid #ccc;
+}
+.form-name::placeholder,
+.form-email::placeholder,
+.form-massage::placeholder {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.form-name:focus,
+.form-email:focus,
+.form-massage:focus {
+  outline: none;
+}
+.form-massage {
+  height: 20rem;
+}
+.phones {
+  margin-bottom: 4.8rem;
+}
+.phones-header,
+.address-header {
+  font-size: 1.4rem;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+.phone-number:link,
+.phone-number:visited {
+  text-decoration: none;
+  color: #777;
+  display: table;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+.phone-number:hover,
+.phone-number:active {
+  color: #555;
+  border-bottom: 1px solid currentColor;
+}
+.real-address {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #777;
+}
+.btn-sent-massage {
+  padding: 1.6rem 3.2rem;
+  background-color: #19c8f8;
+  color: #fff;
+  border: none;
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.btn-sent-massage:hover {
+  background-color: #179ec4;
+}
+/*************************************************/
+/* Footer  */
+/*************************************************/
+footer {
+  padding: 9.8rem 4.8rem 4.8rem 4.8rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../images/subscribe.jpg");
+}
+.flex-footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .logo {
+  margin-bottom: 2.4rem;
+}
+.social-text {
+  font-size: 1.8rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 3.6rem;
+  position: relative;
+}
+.social-text::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  background-color: #fff;
+  bottom: -1rem;
+  left: 0;
+}
+.social-media-container {
+  display: flex;
+  margin-bottom: 4.8rem;
+  gap: 1.2rem;
+}
+.social-logo {
+  color: #fff;
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.social-logo:hover {
+  color: #19c8f8;
+}
+.footer-text {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.footer-text span {
+  color: #19c8f8;
+}
