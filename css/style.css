@@ -506,9 +506,14 @@ nav {
   overflow: hidden;
 }
 .about-img-container {
-  height: 70%;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  bottom: -25%;
+}
+.about-img-container img {
+  position: absolute;
+  width: 80rem;
+  bottom: -35%;
   left: 50%;
   transform: translateX(-50%);
 }
