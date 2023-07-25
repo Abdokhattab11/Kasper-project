@@ -68,6 +68,13 @@
   html {
     font-size: 56.25%;
   }
+  .subscribe-container form input[type="email"] {
+    padding: 2rem;
+    padding-left: 6rem;
+  }
+  .subscribe-container form input[type="submit"] {
+    padding: 2.05rem 2rem 2.05rem 2rem;
+  }
   .text-container {
     width: 100%;
     justify-content: center;
@@ -157,8 +164,31 @@
     display: none;
   }
   .gallary-container,
-  .pricing-grid {
+  .pricing-grid,
+  .contact-grid-container {
     grid-template-columns: 1fr;
+  }
+  .contact-info {
+    text-align: center;
+  }
+  .phones-header {
+    margin-top: 4.8rem;
+    margin-bottom: 10rem;
+  }
+  .phones {
+    position: relative;
+  }
+  .phones .phone-number:nth-child(2) {
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .phones .phone-number:nth-child(3) {
+    position: absolute;
+    top: 3.6rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .price-item {
     width: 75%;
@@ -202,5 +232,12 @@
   .head-img,
   .info-img {
     font-size: 1.6rem;
+  }
+  .subscribe-container form input[type="email"] {
+    padding: 2rem;
+    padding-left: 6rem;
+  }
+  .subscribe-container form input[type="submit"] {
+    padding: 2.06rem 2rem 2.06rem 2rem;
   }
 }
