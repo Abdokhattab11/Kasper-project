@@ -1,0 +1,155 @@
+@media (max-width: 96.875em) {
+  .hero-text h2 {
+    font-size: 2.8rem;
+  }
+  .head-img {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  .info-img {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 84.375em) {
+  .subscribe-container p {
+    text-align: center;
+  }
+  .subscribe-container {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .hero-text {
+    width: 80%;
+  }
+  .head-img {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  .info-img {
+    font-size: 1.2rem;
+  }
+  .more {
+    margin: 0;
+  }
+  .about-info-text {
+    width: 100rem;
+  }
+}
+@media (max-width: 75em) {
+  .text-container {
+    width: 75%;
+  }
+  .gallary-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallary-img-text {
+    height: 22%;
+  }
+  .head-img {
+    font-size: 1.6rem;
+    margin-bottom: 1.28rem;
+  }
+  .info-img {
+    font-size: 1.6rem;
+  }
+  .about-info-text {
+    width: 90rem;
+    justify-content: center;
+    gap: 9.8rem;
+  }
+  .tstnl-p {
+    font-size: 1.4rem;
+  }
+  .design-img {
+    width: 25%;
+  }
+}
+@media (max-width: 62.5rem) {
+  html {
+    font-size: 56.25%;
+  }
+  .text-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-text {
+    padding: 0 2.4rem;
+  }
+  .our-disign-text h2 {
+    font-size: 2.4rem;
+  }
+  .gallary-img-text {
+    height: 25%;
+    bottom: -1px; /* Unknown Error */
+  }
+  .head-img {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  .info-img {
+    font-size: 1.4rem;
+  }
+  .about-info-text {
+    width: 80rem;
+    gap: 8.4rem;
+  }
+  .about-num {
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .testomonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .tstnl-container {
+    grid-row: 2/3;
+    margin-bottom: 6.2rem;
+  }
+  .tstnl-p {
+    font-size: 1.6rem;
+  }
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 9.8rem;
+    row-gap: 12.8rem;
+  }
+  .contact-grid-container {
+    grid-template-columns: 4fr 1fr;
+  }
+}
+@media (max-width: 50em) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    row-gap: 6.2rem;
+  }
+  .design-text-container {
+    width: 100%;
+  }
+  .design-img {
+    position: absolute;
+    left: 60%;
+    bottom: -20%;
+    width: 30%;
+  }
+  .gallary-img-text {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+}
+@media (max-width: 40em) {
+  .head-text {
+    padding: 0 2.4rem;
+  }
+  .gallary-menu {
+    padding: 0 2.4rem;
+    gap: 1.2rem;
+  }
+  .design-figure {
+    display: none;
+  }
+  .gallary-container {
+    grid-template-columns: 1fr;
+  }
+  .gallary-img-text {
+    padding: 1.4rem 2.4rem;
+  }
+}
