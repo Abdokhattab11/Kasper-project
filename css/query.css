@@ -156,8 +156,12 @@
   .design-figure {
     display: none;
   }
-  .gallary-container {
+  .gallary-container,
+  .pricing-grid {
     grid-template-columns: 1fr;
+  }
+  .price-item {
+    width: 75%;
   }
   .gallary-img-text {
     padding: 1.4rem 2.4rem;
