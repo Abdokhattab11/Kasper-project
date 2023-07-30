@@ -53,7 +53,7 @@
     font-size: 1.6rem;
   }
   .about-info-text {
-    width: 90rem;
+    width: 90%;
     justify-content: center;
     gap: 9.8rem;
   }
@@ -97,7 +97,6 @@
     font-size: 1.4rem;
   }
   .about-info-text {
-    width: 80rem;
     gap: 8.4rem;
   }
   .about-num {
@@ -151,6 +150,14 @@
   .quote-container {
     width: 100%;
   }
+  .about-info-text {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-info-container {
+    height: 60rem;
+  }
 }
 @media (max-width: 40em) {
   .head-text {
@@ -202,6 +209,7 @@
   }
   .quote-text {
     padding: 4.8rem;
+    font-size: 2.4rem;
   }
   .section-head::before {
     bottom: -2.5rem;
@@ -213,31 +221,11 @@
     left: 11.5rem;
     transform: translateX(50%);
   }
-  .about-info-container {
-    height: 50rem;
-  }
-  .about-info-text {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
-    justify-items: end;
-    column-gap: 10rem;
-  }
-  .about-info-text .about-item:nth-child(even) {
-    justify-self: start;
-  }
-  .about-icon-cnt {
-    padding-top: 1.2rem;
-  }
   .head-img,
   .info-img {
     font-size: 1.6rem;
   }
-  .subscribe-container form input[type="email"] {
-    padding: 2rem;
-    padding-left: 6rem;
-  }
-  .subscribe-container form input[type="submit"] {
-    padding: 2.06rem 2rem 2.06rem 2rem;
+  form {
+    width: 100%;
   }
 }

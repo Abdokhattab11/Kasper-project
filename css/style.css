@@ -456,7 +456,9 @@ nav {
   position: relative;
   overflow: hidden;
 }
-
+.section-vedio {
+  height: 100vh;
+}
 .video::after {
   content: "";
   position: absolute;
@@ -519,7 +521,7 @@ nav {
 }
 .about-info-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("../images/stats.png");
+    url("../images/stats.jpg");
   background-size: cover;
   height: 40rem;
   position: relative;
@@ -671,7 +673,7 @@ nav {
   border-width: 0.8rem;
   right: 0;
   top: 0;
-  transform: translate(50%, -88%);
+  transform: translate(50%, -92%);
   border-color: black transparent transparent transparent;
 }
 /*************************************************/
@@ -827,15 +829,20 @@ nav {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .subscribe-container form input[type="email"] {
+  font-size: 1.4rem;
   color: #fff;
   caret-color: #19c8f8;
-  padding: 2.05rem 2rem 2.05rem 6rem;
-  border: 1px solid #fff;
+  padding: 2rem 2rem 2rem 6rem;
+  border: none;
   border-right: none;
   background-color: transparent;
-  width: 40rem;
+  width: 70%;
+}
+form {
+  border: 1px solid #fff;
 }
 .subscribe-container form input[type="email"]::placeholder {
   color: #eee;
@@ -846,9 +853,10 @@ nav {
   font-size: 1.4rem;
   text-transform: uppercase;
   padding: 2rem;
-  border: 1px solid #fff;
+  border: none;
   cursor: pointer;
   border-left: none;
+  width: auto;
 }
 .subscribe-container form input[type="submit"]:hover {
   background-color: #179ec4;
