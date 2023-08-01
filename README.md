@@ -20,13 +20,19 @@ The Kespar design is built using :
 
 ## Screenshots
 
-![Hero Secion](screenshots/Hero.png)
-![How it works](screenshots/How%20it%20work.png)
-![Gallary](screenshots/gallay%20%26%20Testomonials.png)
-![meals](screenshots/meals.png)
-![plans](screenshots/plans.png)
-![form](screenshots/form.png)
-![foolter](screenshots/footer.png)
+![Hero Secion](images/screenShots/Hero.jpg)
+
+![Services](images/screenShots/Services.jpg)
+
+![About us](/images/screenShots/aboutus.jpg)
+
+![Protofolio](images/screenShots/protofoio.jpg)
+
+![Testomonials](/images/screenShots/testoSkills.jpg)
+
+![Pricing](images/screenShots/pricing.jpg)
+
+![Contact Us](images/screenShots/contactUs.jpg)
 
 ## Contributing
 
